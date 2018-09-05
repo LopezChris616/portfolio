@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-weight: 300;
+    color: white;
+}
+
+/* navbar */
+.navbar {
+    text-align: end;
+    margin: 20px;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    margin-right: 20px;
+    font-weight: 400;
+}
+
+.current-page {
+    background-color: white;
+    color: black;
+    padding: 6px;
+    border-radius: 8%;
+}
+
+/* home */
+.home-nav {
+    justify-self: center;
+}
+
+.home-links {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.788);
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10%;
+    margin: 10px;
+    font-size: 25px;
+    transition: background-color 0.4s;
+}
+
+.home-links:hover {
+    background-color: white;
+}
+
+#home-page {
+    /* background by SVGBackgrounds.com */
+    background-color: #ff9d00;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#home-page img {
+    position: fixed;
+    background-position: right;
+}
+
+#intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 50vh);
+    justify-content: center;
+    align-content: center;
+}
+
+#intro-name {
+    justify-self: center;
+    align-self: end;
+}
+
+#intro-name h1, #intro-name h2 {
+    font-size: 50px;
+    float: left;
+    margin-bottom: 50px;
+}
+
+/* projects */
+#projects {
+    background-color: #cd0000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23cd0000' width='11' height='11'/%3E%3Crect fill='%23ce1400' x='10' width='11' height='11'/%3E%3Crect fill='%23ce1f00' y='10' width='11' height='11'/%3E%3Crect fill='%23cf2800' x='20' width='11' height='11'/%3E%3Crect fill='%23cf3000' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23d03600' y='20' width='11' height='11'/%3E%3Crect fill='%23d03c00' x='30' width='11' height='11'/%3E%3Crect fill='%23d14200' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23d14700' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23d24c00' y='30' width='11' height='11'/%3E%3Crect fill='%23d25001' x='40' width='11' height='11'/%3E%3Crect fill='%23d25503' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23d35905' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23d35d08' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23d4610b' y='40' width='11' height='11'/%3E%3Crect fill='%23d4660e' x='50' width='11' height='11'/%3E%3Crect fill='%23d46911' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23d56d14' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23d57117' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23d5751b' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23d6781e' y='50' width='11' height='11'/%3E%3Crect fill='%23d67c21' x='60' width='11' height='11'/%3E%3Crect fill='%23d67f24' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23d78328' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23d7862b' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23d78a2e' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23d88d32' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23d89135' x='70' width='11' height='11'/%3E%3Crect fill='%23d89439' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23d9973c' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23d99a40' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23d99e44' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23daa147' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23daa44b' x='80' width='11' height='11'/%3E%3Crect fill='%23dba74f' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23dbaa53' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23dcad57' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23dcb05b' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23dcb35f' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23ddb663' x='90' width='11' height='11'/%3E%3Crect fill='%23ddb967' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23debc6b' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23dfbf6f' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23dfc274' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23e0c578' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23e0c87c' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23e1cb80' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23e2cd85' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23e3d089' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23e3d38e' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23e4d692' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23e5d997' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23e6db9b' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23e7dea0' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23e8e1a4' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23e9e3a9' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23eae6ad' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23ebe9b2' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23edebb6' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23EEB' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    margin-top: 100px;
+}
+
+.project-title {
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-bottom: 10px;
+}
+
+.project section {
+    border: 1px solid black;
+    box-shadow: -20px 10px  20px rgba(0, 0, 0, 0.644);
+    text-align: center;
+    padding-bottom: 5px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.project section:hover {
+    transform: scale(1.1);
+    box-shadow: -30px 20px  30px rgba(0, 0, 0, 0.644);
+}
+
+.project section:nth-child(1){
+    animation: fadeIn 1.0s;
+}
+
+.project section:nth-child(2){
+    animation: fadeIn 3.0s;
+}
+
+.project section:nth-child(3){
+    animation: fadeIn 5.0s;
+}
+
+.project-images {
+    width: 400px;
+    height: 210px;
+}
+
+.title {
+    text-align: center;
+    font-size: 42px;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+/* skills */
+#skills {
+    background-color: #330000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ff8a3d'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* contact info */
+#contact-info {
+    background-color: #cc2c44;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23cc2c44' cx='50' cy='0' r='50'/%3E%3Cg fill='%23cf3b43' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23d24843' cx='50' cy='100' r='50'/%3E%3Cg fill='%23d55443' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23d75f44' cx='50' cy='200' r='50'/%3E%3Cg fill='%23d96a46' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23da7449' cx='50' cy='300' r='50'/%3E%3Cg fill='%23dc7e4d' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23dd8851' cx='50' cy='400' r='50'/%3E%3Cg fill='%23de9156' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23df9b5c' cx='50' cy='500' r='50'/%3E%3Cg fill='%23e0a463' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e1ad6b' cx='50' cy='600' r='50'/%3E%3Cg fill='%23e2b573' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e3be7c' cx='50' cy='700' r='50'/%3E%3Cg fill='%23e5c685' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e6ce8f' cx='50' cy='800' r='50'/%3E%3Cg fill='%23e7d79a' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e9dfa5' cx='50' cy='900' r='50'/%3E%3Cg fill='%23ebe6b0' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23eeeebb' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
+}
