@@ -7,12 +7,32 @@
 }
 
 /* navbar */
-.nav {
-    grid-row: 2 / -1;
-    justify-self: center;
+.navbar {
+    text-align: end;
+    margin: 20px;
 }
 
 .nav-links {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    margin-right: 20px;
+    font-weight: 400;
+}
+
+.current-page {
+    background-color: white;
+    color: black;
+    padding: 6px;
+    border-radius: 8%;
+}
+
+/* home */
+.home-nav {
+    justify-self: center;
+}
+
+.home-links {
     color: black;
     background-color: rgba(255, 255, 255, 0.788);
     text-decoration: none;
@@ -23,11 +43,10 @@
     transition: background-color 0.4s;
 }
 
-.nav-links:hover {
+.home-links:hover {
     background-color: white;
 }
 
-/* home */
 #home-page {
     /* background by SVGBackgrounds.com */
     background-color: #ff9d00;
