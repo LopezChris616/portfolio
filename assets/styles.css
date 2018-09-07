@@ -6,15 +6,6 @@
     color: white;
 }
 
-@keyframes fadeIn{
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 /* navbar */
 .navbar {
     text-align: end;
