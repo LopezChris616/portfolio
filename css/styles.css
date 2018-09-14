@@ -44,3 +44,33 @@
     margin: 0px 0px 0px 50px;
     padding-top: 10px;
 }
+
+
+/* projects */
+.card {
+    width: 350px;
+}
+
+.card-image {
+    overflow: hidden;
+}
+
+.card-image img {
+    transition: 0.3s;
+}
+
+.card-image img:hover {
+    transform: scale(1.1);
+}
+
+.hello {
+    cursor: pointer;
+}
+
+.card-content i {
+    transition: 0.2s;
+}
+
+.card-content i:hover {
+    transform: scale(1.3);
+}
