@@ -1,22 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Christian Lopez's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./assets/styles.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+    <title>Page Title</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <script src="/js/app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-    <main id="home-page">
-        <div id="intro">
-            <header id="intro-name">
-                <h1>Hi, I'm Christian Lopez - Web Developer</h1>
-            </header>
-            <nav class="home-nav">
-                <a href="projects.html" class="home-links">Projects</a>
-                <a href="skills.html" class="home-links">Skillset</a>
-                <a href="contact.html" class="home-links">Contact Me</a>
-            </nav>
-        </div>
-    </main>
+  <div id="container">
+    <div>
+      <ul id="slide-out" class="sidenav">
+        <li>
+          <a href="#" class="subheader">Christian Lopez</a>
+        </li>
+        <li>
+          <a href="#" class="subheader">Web Developer</a>
+        </li>
+        <li><div class="divider"></div></li>
+        <li>
+          <a href="#" class="waves-effect"><i class="material-icons small white-text">web</i>Projects</a>
+        </li>
+        <li>
+          <a href="#" class="waves-effect"><i class="material-icons small white-text">stars</i>Skills</a>
+        </li>
+        <li>
+          <a class="waves-effect" href="#"><i class="material-icons small white-text">contact_mail</i>Contact</a>
+        </li>
+        <li>
+          <a href="#" class="waves-effect"><i class="material-icons small white-text">assignment_ind</i>Resume</a>
+        </li>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+    <div>
+      <div id="intro">
+        <h1>Let's work together.</h1>
+      </div>
+    </div>
+
+  </div>
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
 </body>
 </html>
