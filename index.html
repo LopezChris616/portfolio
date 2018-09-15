@@ -5,24 +5,24 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/fontawesome-free-5.3.1-web/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
   <ul id="slide-out" class="sidenav sidenav-fixed">
-    <li><a href="#" class="subheader">Christian Lopez</a></li>
-    <li><a href="#" class="subheader">Web Developer</a></li>
-    <li><div class="divider"></div></li>
     <li><a href="#intro" class="waves-effect"><i class="material-icons small white-text">arrow_upward</i>Top of Page</a></li>
     <li><a href="#projects" class="waves-effect"><i class="material-icons small white-text">web</i>Projects</a></li>
     <li><a href="#skillsScroll" class="waves-effect"><i class="material-icons small white-text">stars</i>Skills</a></li>
-    <li><a class="waves-effect" href="#"><i class="material-icons small white-text">contact_mail</i>Contact</a></li>
+    <li><a class="waves-effect" href="#contact"><i class="material-icons small white-text">contact_mail</i>Contact</a></li>
     <li><a href="#" class="waves-effect"><i class="material-icons small white-text">assignment_ind</i>Resume</a></li>
   </ul>
   <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
   <div id="container">
     <div>
       <div id="intro" class="section scrollspy">
+        <h1>Christian Lopez</h1>
+        <h1>Web Developer</h1>
         <h1>Let's work together.</h1>
       </div>
       <div id="projects" class="section scrollspy">
@@ -172,11 +172,25 @@
     </div>
 
 
-    <div id="contact">
+    <div id="contact" class="section scrollspy">
       <h2>Contact</h2>
       <div class="card">
         <div class="card-content">
-            <a class="btn-floating btn-medium waves-effect waves-light red"><i class="material-icons">add</i></a>
+          <span class="card-title">Info</span>
+          <div class="row">
+            <div class="col s3 techName">
+              <a class="btn-floating btn-large waves-effect waves-light red" href="https://www.linkedin.com/in/lopezchris616/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <p>LinkedIn</p>
+            </div>
+            <div class="col s3 techName">
+              <a class="btn-floating btn-large waves-effect waves-light red" href="mailto:christian.lopez023@mymdc.net" target="_blank"><i class="material-icons">email</i></a>
+              <p>Email</p>
+            </div>
+            <div class="col s3 techName">
+                <a class="btn-floating btn-large waves-effect waves-light red" href="https://github.com/LopezChris616" target="_blank"><i class="fab fa-github"></i></a>
+                <p>GitHub</p>
+            </div>
+          </div> 
         </div>
       </div>
     </div>

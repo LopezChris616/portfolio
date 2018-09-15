@@ -40,13 +40,14 @@
 #intro h1 {
     color: white;
     font-weight: 300;
-    margin: 0px 0px 0px 50px;
+    /* margin-top: 100px; */
     padding-top: 10px;
+    text-align: center;
 }
 
 
 /* projects */
-#projects h2 {
+#projects h2, #skills h2, #contact h2 {
     font-weight: 300;
     margin-left: 20px;
 }
@@ -97,17 +98,18 @@
     text-align: center;
 }
 
+/* contact */
+#contact {
+    padding: 30px;
+}
 
+.btn-floating.btn-large i {
+    background-color: rgb(249, 170, 51);
+}
 
-
-
-
-
-
-
-
-
-
+#contact .card .card-content .row {
+    margin: auto;
+}
 
   @media only screen and (max-width : 992px) {
     #container {
